@@ -1,0 +1,33 @@
+13. WAP for this and super keyword in java example
+THIS KEYWORD Program
+public class Main {
+int x;
+// Constructor with a parameter
+public Main(int x) {
+this.x = x;
+}
+// Call the constructor
+public static void main(String[] args) {
+Main myObj = new Main(5);
+System.out.println("Value of x = " + myObj.x);
+}
+}
+SUPER CLASS Program
+class Vehicle { // Base class vehicle
+int maxSpeed = 120;
+}
+class Car extends Vehicle { // sub class Car extending vehicle
+int maxSpeed = 180;
+void display()
+{
+// print maxSpeed of base class (vehicle)
+System.out.println("Maximum Speed: "
++ super.maxSpeed);
+} }
+class Test { // Driver Program
+public static void main(String[] args)
+{
+Car small = new Car();
+small.display();
+}
+}

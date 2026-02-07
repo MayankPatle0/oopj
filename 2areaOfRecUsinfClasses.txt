@@ -1,0 +1,21 @@
+2. Write a Java Program to calculate Area of Rectangle using classes Program:
+class Rectangle
+{
+double length;
+double breadth;
+}
+// This class declares an object of type Rectangle.
+class RectangleDemo
+{
+public static void main(String args[])
+{
+Rectangle myrect = new Rectangle();
+double area;
+// assign values to myrect's instance variables
+myrect.length = 10;
+myrect.breadth = 20;
+// Compute Area of Rectangle
+area = myrect.length * myrect.breadth ;
+System.out.println("Area is " + area);
+}
+}
